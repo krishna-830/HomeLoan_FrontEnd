@@ -12,17 +12,17 @@ export class RegisterService {
   constructor(private httpclient: HttpClient) { }
 
   c: Customer = {
-    customerId: 0,
-    customerName: "",
-    customerDateOfBirth: "",
-    customerAge: 0,
-    customerGender: "",
-    customerEmail: "",
-    sanctionAmount: 0,
-    address: [],
-    profession: [],
-    status: undefined,
-    cibilscore: 0,
+    eID: 0,
+    name: "",
+    DOB: "",
+    Age: 0,
+    Gender: "",
+    Email: "",
+   
+    cAddress: [],
+    cProfession: [],
+  
+    ccbil: ,
     accountdetails: [],
     gurantordetails: [],
     ledger: [],

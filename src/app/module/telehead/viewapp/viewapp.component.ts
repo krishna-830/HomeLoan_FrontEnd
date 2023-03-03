@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Emi } from 'app/model/emi';
+import { Emi } from 'app/model/EMIDetails';
 import { EmiCustomer } from 'app/model/EmiCustomer';
 import { ReportService } from 'app/module/shared/report.service';
 

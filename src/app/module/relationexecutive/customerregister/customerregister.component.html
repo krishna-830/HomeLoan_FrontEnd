@@ -7,20 +7,30 @@
     <mat-step label="Applicant Info">
       
         <ng-template matStepLabel>Applicant Info</ng-template>
- 
         <mat-form-field>
-         <input matInput type="text" class="form-control" placeholder="Applicant Name" formControlName="customerName">
+          <input matInput type="text" class="form-control" placeholder="Applicant's Enquiry ID" formControlName="eID">
+         </mat-form-field><br>
+        <mat-form-field>
+         <input matInput type="text" class="form-control" placeholder="Applicant Name" formControlName="name">
         </mat-form-field><br>
         <mat-form-field>
-          <input matInput type="text"  class="form-control"placeholder="Applicant DOB" formControlName="customerDateOfBirth">
+          <input matInput type="text"  class="form-control"placeholder="Applicant DOB" formControlName="DOB">
         </mat-form-field><br>
         <mat-form-field>
-          <input matInput type="text"  class="form-control"placeholder="Applicant age" formControlName="customerAge">
+          <input matInput type="text"  class="form-control"placeholder="Applicant age" formControlName="Age">
         </mat-form-field><br>
         <mat-form-field>
-          <input matInput type="text" class="form-control" placeholder="Applicant email"formControlName="customerEmail">
+          <input matInput type="text" class="form-control" placeholder="Applicant email"formControlName="Email">
         </mat-form-field><br>
-        
+        <mat-form-field>
+          <input matInput type="text" class="form-control" placeholder="Applicant Gender"formControlName="Gender">
+        </mat-form-field><br>
+        <mat-form-field>
+          <input matInput type="text" class="form-control" placeholder="Applicant MobileNo"formControlName="MobileNo">
+        </mat-form-field><br>
+        <mat-form-field>
+          <input matInput type="text" class="form-control" placeholder="Applicant Additional"formControlName="cAdditionalMobileNo">
+        </mat-form-field><br>
         <div class="example-button-row">
           <button  mat-raised-button color="primary" matStepperNext>Next</button>
         </div>

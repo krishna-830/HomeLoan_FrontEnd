@@ -14,15 +14,16 @@ export class CommonService {
   constructor(private http: HttpClient) { }
 
   enqiry:Enquiry={
-    custId: 0,
-    firstName: '',
-    lastName: '',
+    eId: 0,
+    name: '',
+
     emailId: '',
     mbNo: 0,
     pancardNo: '',
     age: 0,
-    status: '',
-    cibil: 0
+    dob: '',
+    gender: '',
+    addharCard: 0
   }
 
   getEnquiry(id: number): Observable<any> {
@@ -30,14 +31,14 @@ export class CommonService {
   }
 
   createEnquiry(enqiry: Enquiry): Observable<Object> {
-    if(enqiry.custId==0){
-      enqiry.status="enquiry"
+    if(enqiry.eId==0){
+      return this.http.post(`${this.baseUrl}/postEnquiry`, enqiry);
     }
     else{
-      enqiry.status="registred"
+     return this.updateEnquiry(enqiry.eId,enqiry);
     }
     
-    return this.http.post(`${this.baseUrl}/postEnquiry`, enqiry);
+    
   }
 
   updateEnquiry(id: number, value: any): Observable<Object> {
