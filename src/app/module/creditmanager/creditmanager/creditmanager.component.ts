@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer } from 'app/model/Customer';
-import { Document } from 'app/model/document';
+import { AllPersonalDocs } from 'app/model/AllPersonalDocs';
 import { RegisterService } from 'app/module/shared/register.service ';
 import { ReportService } from 'app/module/shared/report.service';
 import { data } from 'jquery';

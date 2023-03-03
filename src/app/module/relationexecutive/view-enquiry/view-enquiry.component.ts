@@ -39,14 +39,14 @@ export class ViewEnquiryComponent implements OnInit {
 
 
 
-  rejectmail(e:Enquiry){
-const email=new Email()
-email.appId=e.custId
-email.name=e.firstName
-email.to=e.emailId
-email.status=e.status
+//   rejectmail(e:Enquiry){
+// const email=new Email()
+// email.appId=e.custId
+// email.name=e.firstName
+// email.to=e.emailId
+// email.status=e.status
 
-    this.repo.email(email).subscribe();
-  }
+//     this.repo.email(email).subscribe();
+//   }
 
 }

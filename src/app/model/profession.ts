@@ -1,8 +1,8 @@
 export class Profession {
-    professionId:number;
-professionType:String;
-professionSalary:number;
-professionSalaryType:String;
-workingFrom:String;
-professionDesignation:String;
+pid:number;
+ptype:String;
+psalary:number;
+psalarytype:String;
+pworkingperiod:String;
+pDesignation:String;
 }
